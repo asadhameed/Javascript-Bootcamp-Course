@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <style>
+            .hidden{
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="row show">
+            <div class="col s8 offset-s2">
+                <div class="card-panel">
+                    <form id='formcreatemessage'>
+                        <label>Enter a secret Message</label>
+                        <input id='message-input'/>
+                        <button class="btn">Create</button>
+                    </form>
+                </div>
+                <div>
+                    Share this link with a friend
+                    <input id='link-input'/>
+                </div>
+            </div>
+        </div>
+        <div class="row hidden">
+            <div class="col s8 offset-s2">
+                <div class="card-panel">
+                    <label>The message is </label>
+                    <input id='user-message'>
+                    <button class="btn" id='createnewmessage'>New</button>
+                </div>
+            </div>
+        </div>
+        <script src="myindex.js"></script>
+    </body>
+</html>
